@@ -1,0 +1,205 @@
+body {
+  margin: 0;  
+}
+
+
+.font-link {
+  font-family: 'GFS Didot', serif;
+}
+
+.header {  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    background-color: gray;
+}
+
+.header img {
+    width: 25px;    
+    margin-right: 10px;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.header a:nth-child(1) {
+  margin-left: 10px;
+}
+
+.iconos {
+  padding: 25px 25px; 
+  font-size: 1.5em;
+}
+
+.todo{
+  display: flex;
+}
+  .general {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .general .experiencia {
+    flex: content;        
+  }
+
+.cajaDatos {
+  width: 600px;
+  height: 400px;
+  padding: 20px;
+  background-color: brown;
+  color: white;
+  font-family: 'GFS Didot', serif;
+}
+
+.tituloSkills {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.8em;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-top: 20px;
+  color: brown;
+}
+.formacion {
+  font-size: 1.4em;
+  padding-left: 25px ;  
+}
+
+.tituloSkills dt {  
+  font-size: 0.6em;
+  color: black;
+  font-weight: 100;
+  line-height: 10px;
+}
+
+.nombre {
+  font-size: 3.6em;
+  font-weight: 600;
+}
+
+.titulo div {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.subtitulo {
+  font-size: 1.8em;
+  font-weight: 600;
+  vertical-align: top;
+  padding: 25px 25px;
+}
+
+
+.prueba {
+  display:flex;
+  align-items: center;
+}
+.prueba div,a {
+  margin-left: 20px;
+}
+
+
+.detalles {
+  display: flex;
+  margin-top: 50px;
+  padding-left: 25px;
+}
+
+.detalles {
+  align-items: center;    
+}
+
+.detalles img {
+  width: 20px;
+}
+
+.textIcon {
+  margin-left: 10px;
+}
+
+.cajaDatos h5 {    
+  font-size: 1.4em;
+  font-weight: 600;
+  line-height: 0;  
+}
+
+.experiencia {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #eeeeee;
+  color: #202020;
+  font-family: 'GFS Didot', serif;  
+}
+
+.experiencia .titulo {
+  font-size: 2em;
+  align-self: center;  
+}
+
+.puesto {
+  font-size: 1em;  
+}
+
+.empresa {  
+  font-size: 0.8em;
+  color: brown;
+}
+
+li,span {  
+  font-size: 0.6em;
+  margin-left: 20px;
+}
+
+.fecha {
+  display: flex;
+  align-items: center;
+  font-size: 0.5em;    
+}
+.fecha img {
+  width: 20px;
+}
+.fecha div {
+  margin-left: 10px;
+}
+
+
+/*
+
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+}
+
+div,img {
+  border: 2px solid black;
+}
+
+a {
+  width:25%;
+}
+
+section {
+  display: flex;
+}
+
+img {
+  vertical-align: top;
+}
+
+@media only screen and (max-width:900px){
+  nav {
+    flex-direction: column;
+  }
+  a:nth-child(1) {
+    order:3;
+  }
+}
+*/
