@@ -24,10 +24,10 @@ function Datos() {
                             </div>
 
                             <div className='prueba'>
-                                <img width="20" alt="" src={Phone} /> 
-                                <div>
-                                    +34 661 732 768
-                                </div>
+                                <img width="20" alt="" src={Phone} />                                 
+                                   <a href='tel:+34 661 732 768' >
+                                        +34 661 732 768
+                                   </a>                                
                             </div>
 
                             <div className='prueba'>
@@ -117,8 +117,8 @@ function Datos() {
                     </div>              
 
                     <ul>                        
-                        <li>Desarrollo de software en Seat - Fullstack developer. Creación de software para control de 
-                            inventario; Backend:  MySQL y PHP. Frontend: HTML, CSS, JavaScript y Bootstrap. </li>
+                        <li>Desarrollo de software en Seat de software para control de 
+                            inventario; Backend:  MySQL y PHP. Frontend: HTML, JavaScript, jQuery y Bootstrap. </li>
                         <li>Administración de sistemas Windows Server en Acciona,Cepsa y Axa.
                             He estado involucrado en diferentes proyectos de administación de sistemas : 
                             administración de Active Directory, configuración y administración de SCCM, security policies, scripting en Powershell...</li>
