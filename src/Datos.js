@@ -74,7 +74,7 @@ function Datos() {
                     </div>   
                 
                     <div>
-                            Libraries                       
+                            Librerías                       
                         <dt>
                             <dl>React</dl>
                             <dl>jQuery</dl>
