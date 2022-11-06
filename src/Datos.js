@@ -101,7 +101,7 @@ function Datos() {
                     </div>   
 
                     <ul>
-                        <li> Desarrolo de proyecto empresarial.</li>
+                        <li>Desarrolo de proyecto empresarial.</li>
                                
                     </ul>
                 </div>
