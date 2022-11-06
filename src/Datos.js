@@ -94,6 +94,18 @@ function Datos() {
                 </div>
                 <p></p>
                 <div className='subtitulo'>
+                    <div className='puesto'>Developer</div>
+                    <div className='empresa'>-</div>
+                    <div className='fecha'><img alt="" src={Calendar} />
+                        <div>Marzo 2021- now</div>
+                    </div>   
+
+                    <ul>
+                        <li> Desarrolo de proyecto empresarial.</li>
+                               
+                    </ul>
+                </div>
+                <div className='subtitulo'>
                     <div className='puesto'>Front-End Developer</div>
                     <div className='empresa'>ENEO Technologies</div>
                     <div className='fecha'><img alt="" src={Calendar} />
