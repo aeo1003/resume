@@ -12,6 +12,13 @@ import Ficha from './Ficha'
 function Datos2() {
     const {miJson} = useContext(datosContexto)
 
+
+/*
+    <h5><img width="20" alt="" src={World} style={{marginRight:'15px'}} />                             
+                            LinkdIn</h5>                                        
+
+*/
+
     return (
     <>  
         <div className='todo'>
@@ -34,9 +41,7 @@ function Datos2() {
                         
                             <h5><img width="20" alt="" src={Home} style={{marginRight:'15px'}} />  
                             Gijón, Asturias </h5>
-                        
-                            <h5><img width="20" alt="" src={World} style={{marginRight:'15px'}} />                             
-                            LinkdIn</h5>                                        
+                                                
                     </div>
                 </article>
 
