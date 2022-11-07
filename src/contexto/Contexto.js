@@ -47,7 +47,7 @@ export const DatosJson = ({ children }) => {
             puesto: 'Soporte L3',
             empresa: 'Thomson Holidays',
             fechas: 'Enero 2000-Marzo 2002',
-            datos: ['RSoporte on call/on site de servidores Windows NT- Europa, África y América',
+            datos: ['Soporte on call/on site de servidores Windows NT- Europa, África y América',
             'Gestión de AD y políticas de seguridad']
         }        
     ]
