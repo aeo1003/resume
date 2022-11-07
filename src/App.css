@@ -37,14 +37,6 @@ body {
 .todo{
   display: flex;
 }
-  .general {
-    display: flex;
-    flex-direction: column; 
-  }
-
-  .general .experiencia {
-    flex: content;        
-  }
 
 .cajaDatos {
   width: 600px;
@@ -66,7 +58,8 @@ body {
 }
 .formacion {
   font-size: 1.4em;
-  padding-left: 25px ;  
+  padding-left: 60px ;  
+  padding-right: 10px;
 }
 
 .tituloSkills dt {  
@@ -137,69 +130,28 @@ body {
 }
 
 .experiencia .titulo {
-  font-size: 2em;
+  font-size: 1.6em;
   align-self: center;  
 }
 
 .puesto {
-  font-size: 1em;  
+  font-size: 2em;  
 }
 
 .empresa {  
-  font-size: 0.8em;
+  font-size: 1.4em;
   color: brown;
-}
-
-li,span {  
-  font-size: 0.6em;
-  margin-left: 20px;
 }
 
 .fecha {
   display: flex;
   align-items: center;
-  font-size: 0.5em;    
 }
 .fecha img {
-  width: 20px;
-}
-.fecha div {
-  margin-left: 10px;
+  margin-right: 5px;
 }
 
-
-/*
-
-body {
-  margin: 0;
+.trabajo {
+  font-size: 1.2em;
+  font-weight: 100;
 }
-
-nav {
-  display: flex;
-}
-
-div,img {
-  border: 2px solid black;
-}
-
-a {
-  width:25%;
-}
-
-section {
-  display: flex;
-}
-
-img {
-  vertical-align: top;
-}
-
-@media only screen and (max-width:900px){
-  nav {
-    flex-direction: column;
-  }
-  a:nth-child(1) {
-    order:3;
-  }
-}
-*/
