@@ -59,7 +59,7 @@ function Datos2() {
                         <dl>Diferentes cursos online y bootcamps.</dl>
                     </dt>
                     
-                    <div  className='tituloSkills'>                                                
+                    <div  style={{marginLeft:'var(--margen-izquierdo)'}} className='tituloSkills'>                                                
                         <div>
                                 Lenguajes                        
                             <dt>

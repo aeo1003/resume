@@ -96,35 +96,29 @@ body {
 .tituloSkills {
   display: flex;
   justify-content: space-around;
-  font-size: 2em;
+  font-size: 2vw;
   font-weight: 600;
   margin-top:20px;  
   color: brown;
 }
 .formacion {
-  font-size: 1.2em;
-  margin-left: var(--margen-izquierdo) ;  
+  font-size: 1.3vw;
+  margin-left: var(--margen-izquierdo);  
   padding-right: 10px;
 }
 
 .tituloSkills dt { 
-  font-size: 0.6em;
+  font-size: 1.3vw;
   color: black;
   font-weight: 100;
   line-height: 10px;
 }
 
 .tituloSkills div {
-  margin-top:40px;
+  margin-top:40px;  
 
 }
 
-
-
-.titulo div {
-  font-size: 1.6em;
-  font-weight: 600;
-}
 
 .experiencia {
   display: flex;
@@ -137,7 +131,7 @@ body {
 }
 
 .titulo {
-  font-size: 2.6em;
+  font-size: 2.5vw;
   font-weight: 600;
   align-self: center;
   margin-top: 10px;
@@ -145,11 +139,11 @@ body {
 }
 
 .puesto {
-  font-size: 2em;  
+  font-size: 2.2vw;  
 }
 
 .empresa {  
-  font-size: 1.4em;
+  font-size: 1.5vw;
   color: brown;
 }
 
@@ -162,6 +156,6 @@ body {
 }
 
 .trabajo {
-  font-size: 1.2em;
+  font-size: 1.5vw;
   font-weight: 100;
 }
