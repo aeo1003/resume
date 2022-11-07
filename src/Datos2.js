@@ -17,26 +17,26 @@ function Datos2() {
         <div className='todo'>
             <section>
                 <article className='cajaDatos'>
-                    <div className='nombre'>Angel Escribano</div>
-                    <div className='subtitulo'>Front-End Developer</div>  
+                    <h1 className='nombre'>Angel Escribano</h1>
+                    <h2 className='subtitulo'>Front-End Developer</h2>  
                             
                     <div className='iconos'>                            
                         
-                        <div><img width="20" alt="" src={Mail} style={{marginRight:'15px'}}/> 
+                        <h5><img width="20" alt="" src={Mail} style={{marginRight:'15px'}}/> 
                             <a href="mailto:aeo1003@gmail.com">
                                 aeo1003@gmail.com
-                            </a> </div>
+                            </a> </h5>
                         
-                            <div><img width="20" alt="" src={Phone} style={{marginRight:'15px'}}/>                                 
+                            <h5><img width="20" alt="" src={Phone} style={{marginRight:'15px'}}/>                                 
                             <a href='tel:+34 661 732 768' >
                                     +34 661 732 768
-                            </a> </div>
+                            </a> </h5>
                         
-                            <div><img width="20" alt="" src={Home} style={{marginRight:'15px'}} />  
-                            Gijón, Asturias </div>
+                            <h5><img width="20" alt="" src={Home} style={{marginRight:'15px'}} />  
+                            Gijón, Asturias </h5>
                         
-                            <div><img width="20" alt="" src={World} style={{marginRight:'15px'}} />                             
-                            LinkdIn</div>                                        
+                            <h5><img width="20" alt="" src={World} style={{marginRight:'15px'}} />                             
+                            LinkdIn</h5>                                        
                     </div>
                 </article>
 

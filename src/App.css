@@ -47,10 +47,21 @@ body {
   overflow: hidden;
 }
 
-.cajaDatos h5 {    
-  font-size: 1.4em;
+.cajaDatos h1 {
+  font-size: 3vw;
   font-weight: 600;
-  line-height: 0;  
+  line-height: 0;
+  word-wrap:break-word;
+}
+
+.cajaDatos h2 {
+  font-size: 2vw;
+  font-weight: 600;
+  line-height: 0;
+}
+
+.cajaDatos h5 {    
+  font-size: 1.5vw;
 }
 
 
@@ -69,6 +80,18 @@ body {
   margin-left: var(--margen-izquierdo);
 }
 
+
+.iconos {
+  flex-direction: column;  
+  margin-left: var(--margen-izquierdo);
+}
+
+
+.iconos h5 {
+  display: flex;
+  align-items: center;
+  line-height: 1vw;
+}
 
 .tituloSkills {
   display: flex;
@@ -102,20 +125,6 @@ body {
   font-size: 1.6em;
   font-weight: 600;
 }
-
-.iconos {
-  flex-direction: column;
-  margin-left: var(--margen-izquierdo); 
-  font-size: 1.5em;
-  line-height: 40px;
-}
-
-.iconos div {
-  display: flex;
-  align-items: center;
-}
-
-
 
 .experiencia {
   display: flex;
