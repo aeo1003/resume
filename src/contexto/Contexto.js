@@ -7,13 +7,13 @@ export const DatosJson = ({ children }) => {
     
     const tempJson = [
         {
-            puesto: 'Developer',
-            empresa: '-',
+            puesto: 'FullStack Developer',
+            empresa: 'Proyecto personal',
             fechas: 'Marzo 2021- ahora',
-            datos: ['Desarrolo de proyecto empresarial']
+            datos: ['Desarrolo de proyecto empresarial','nodeJS, JavaScript, React, Python']
         },
         {
-            puesto: 'Front-End Developer',
+            puesto: 'FrontEnd Developer',
             empresa: 'ENEO Technologies',
             fechas: 'Julio 2020-Febrero 2021',
             datos: ['Desarrollo de software de ciberseguridad - IPS/IDS. Proyecto RedBorder.',
@@ -22,7 +22,7 @@ export const DatosJson = ({ children }) => {
             'Software en la parte Big Data : Kafka, Chef, Logstash']
         },
         {
-            puesto: 'Front-End Developer / SysAdmin / Soporte',
+            puesto: 'FrontEnd Developer / SysAdmin / Soporte',
             empresa: 'Atos',
             fechas: 'Enero 2017-Enero 2020',
             datos: ['Desarrollo de software en Seat de software para control de inventario; Backend:  MySQL y PHP. Frontend: HTML, JavaScript, jQuery y Bootstrap.',

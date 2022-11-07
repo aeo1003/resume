@@ -1,7 +1,10 @@
+:root {
+  --margen-izquierdo: 40px;
+}
+
 body {
   margin: 0;  
 }
-
 
 .font-link {
   font-family: 'GFS Didot', serif;
@@ -29,10 +32,6 @@ body {
   margin-left: 10px;
 }
 
-.iconos {
-  padding: 25px 25px; 
-  font-size: 1.5em;
-}
 
 .todo{
   display: flex;
@@ -47,10 +46,17 @@ body {
   font-family: 'GFS Didot', serif;
 }
 
+.cajaDatos h5 {    
+  font-size: 1.4em;
+  font-weight: 600;
+  line-height: 0;  
+}
+
 
 .nombre {
   font-size: 3.6em;
   font-weight: 600;
+  margin-left: var(--margen-izquierdo);
 }
 
 
@@ -58,7 +64,8 @@ body {
   font-size: 1.8em;
   font-weight: 600;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+  margin-left: var(--margen-izquierdo);
 }
 
 
@@ -67,13 +74,12 @@ body {
   justify-content: space-around;
   font-size: 2em;
   font-weight: 600;
-  padding-left: 20px;
-  padding-top: 20px;
+  margin-top:20px;  
   color: brown;
 }
 .formacion {
   font-size: 1.2em;
-  padding-left: 60px ;  
+  margin-left: var(--margen-izquierdo) ;  
   padding-right: 10px;
 }
 
@@ -91,51 +97,39 @@ body {
   font-weight: 600;
 }
 
-.prueba {
-  display:flex;
+.iconos {
+  flex-direction: column;
+  margin-left: var(--margen-izquierdo); 
+  font-size: 1.5em;
+  line-height: 40px;
+}
+
+.iconos div {
+  display: flex;
   align-items: center;
 }
-.prueba div,a {
+
+.prueba {
+  display:flex;
+  align-items: center;  
+}
+.prueba dl,a {
   margin-left: 20px;
-}
-
-
-.detalles {
-  display: flex;
-  margin-top: 50px;
-  padding-left: 25px;
-}
-
-.detalles {
-  align-items: center;    
-}
-
-.detalles img {
-  width: 20px;
-}
-
-.textIcon {
-  margin-left: 10px;
-}
-
-.cajaDatos h5 {    
-  font-size: 1.4em;
-  font-weight: 600;
-  line-height: 0;  
 }
 
 .experiencia {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  background-color: #eeeeee;
+  background-color: #dddddd;
   color: #202020;
-  font-family: 'GFS Didot', serif;  
+  font-family: 'GFS Didot', serif;
 }
 
 .experiencia .titulo {
   font-size: 1.6em;
-  align-self: center;  
+
+  align-self: center;
+
 }
 
 .puesto {
