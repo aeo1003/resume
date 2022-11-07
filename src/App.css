@@ -119,7 +119,6 @@ body {
 
 }
 
-
 .experiencia {
   display: flex;
   flex-direction: column;
@@ -131,7 +130,7 @@ body {
 }
 
 .titulo {
-  font-size: 2.5vw;
+  font-size: 2.3vw;
   font-weight: 600;
   align-self: center;
   margin-top: 10px;
