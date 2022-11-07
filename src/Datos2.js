@@ -46,7 +46,7 @@ function Datos2() {
                     <div className='tituloSkills'>
                         Formación
                     </div>
-
+                    
                     <dt className='formacion'>
                         <dl>Idiomas : español (nativo), inglés (fluido) </dl>
                         <dl>EGB-BUP-COU-Selectividad.</dl>
@@ -54,7 +54,7 @@ function Datos2() {
                         <dl>1 año Computer Science Degree - Cambridge University of East Anglia.</dl>
                         <dl>Diferentes cursos online y bootcamps.</dl>
                     </dt>
-
+                    
                     <div  className='tituloSkills'>                                                
                         <div>
                                 Lenguajes                        
@@ -76,6 +76,7 @@ function Datos2() {
                             </dt>
                         </div>                                   
                     </div>
+                
                 </article>
             </section> 
 

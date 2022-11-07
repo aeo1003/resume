@@ -83,11 +83,16 @@ body {
   padding-right: 10px;
 }
 
-.tituloSkills dt {  
+.tituloSkills dt { 
   font-size: 0.6em;
   color: black;
   font-weight: 100;
   line-height: 10px;
+}
+
+.tituloSkills div {
+  margin-top:40px;
+
 }
 
 
@@ -123,9 +128,11 @@ body {
   background-color: #dddddd;
   color: #202020;
   font-family: 'GFS Didot', serif;
+  padding-left: var(--margen-izquierdo);
+  padding-right: var(--margen-izquierdo);
 }
 
-.experiencia .titulo {
+.titulo {
   font-size: 1.6em;
 
   align-self: center;
