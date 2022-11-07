@@ -51,7 +51,7 @@ function Datos2() {
             </article>
 
             <article className='mySkills'>
-                
+
                 <div className='tituloSkills'>
                     Formación
                 </div>
@@ -64,8 +64,7 @@ function Datos2() {
                     <dl>Diferentes cursos online y bootcamps.</dl>
                 </dt>
 
-                <div  className='tituloSkills'>                        
-                        
+                <div  className='tituloSkills'>                                                
                     <div>
                             Lenguajes                        
                         <dt>
@@ -89,13 +88,15 @@ function Datos2() {
             </article>
         </section> 
 
+
+
+
         <section>
             <article className='experiencia'>                
                 <div className='titulo'>
                     <div>EXPERIENCIA LABORAL</div>
                 </div>
                 <p></p>
-
                 {miJson.map(d=>           
                 <Ficha key={d.empresa} puesto={d.puesto} empresa={d.empresa} fechas={d.fechas} datos={d.datos}/>            
                 )}

@@ -47,17 +47,32 @@ body {
   font-family: 'GFS Didot', serif;
 }
 
+
+.nombre {
+  font-size: 3.6em;
+  font-weight: 600;
+}
+
+
+.subtitulo {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
 .tituloSkills {
   display: flex;
   justify-content: space-around;
-  font-size: 2.8em;
+  font-size: 2em;
   font-weight: 600;
   padding-left: 20px;
   padding-top: 20px;
   color: brown;
 }
 .formacion {
-  font-size: 1.4em;
+  font-size: 1.2em;
   padding-left: 60px ;  
   padding-right: 10px;
 }
@@ -69,23 +84,12 @@ body {
   line-height: 10px;
 }
 
-.nombre {
-  font-size: 3.6em;
-  font-weight: 600;
-}
+
 
 .titulo div {
   font-size: 1.6em;
   font-weight: 600;
 }
-
-.subtitulo {
-  font-size: 1.8em;
-  font-weight: 600;
-  vertical-align: top;
-  padding: 25px 25px;
-}
-
 
 .prueba {
   display:flex;
