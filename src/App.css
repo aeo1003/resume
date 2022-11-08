@@ -182,10 +182,7 @@ body {
 
 
 
-
-
-
-@media only screen and (min-width:640px){
+@media only screen and (min-width:960px){
   
   .datosPersonales {
     padding-left: 5%;
@@ -257,10 +254,6 @@ body {
     border-left: 1vw solid rgb(235, 155, 126);
     padding-left: 3vw;
   }
-
-
-
-
 
   .miExperiencia {
     background-color: #eeeeee;
