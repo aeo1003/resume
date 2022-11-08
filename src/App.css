@@ -32,7 +32,7 @@ body {
 
 .header a {
   color: black;
-  font-size: large;
+  font-size: 4vw;
   text-decoration: none;
 }
 
@@ -47,7 +47,7 @@ body {
 }
 
 .datosPersonales {
-  margin-top: -20px;
+  margin-top: -8vh;
   padding-left: 5%;
   padding-right: 5%;
   font-size: 5vw;
@@ -180,11 +180,10 @@ body {
 }
 
 
-
-
-@media only screen and (min-width:1280px){
+@media only screen and (min-width:1081px){
   
   .datosPersonales {
+    margin-top: -1vh;
     padding-left: 5%;
     padding-right: 5%;
     font-size: 2vw;
