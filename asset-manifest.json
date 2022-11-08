@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.4242e47a.css",
+    "main.css": "/resume/static/css/main.0d19bd67.css",
     "main.js": "/resume/static/js/main.fb1b798c.js",
     "static/media/TheanoDidot-Regular.ttf": "/resume/static/media/TheanoDidot-Regular.1fb7644d6925a261981d.ttf",
     "static/media/Bodidota.ttf": "/resume/static/media/Bodidota.7a082130184d3572dbd8.ttf",
@@ -9,11 +9,11 @@
     "static/media/mail-svgrepo-com.svg": "/resume/static/media/mail-svgrepo-com.dc3b5a362c4ee05c020ac8553bd15c2d.svg",
     "static/media/home-svgrepo-com.svg": "/resume/static/media/home-svgrepo-com.aa6e4426ac300c350116504bd4e8d7ef.svg",
     "index.html": "/resume/index.html",
-    "main.4242e47a.css.map": "/resume/static/css/main.4242e47a.css.map",
+    "main.0d19bd67.css.map": "/resume/static/css/main.0d19bd67.css.map",
     "main.fb1b798c.js.map": "/resume/static/js/main.fb1b798c.js.map"
   },
   "entrypoints": [
-    "static/css/main.4242e47a.css",
+    "static/css/main.0d19bd67.css",
     "static/js/main.fb1b798c.js"
   ]
 }
