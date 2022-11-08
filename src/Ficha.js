@@ -4,10 +4,10 @@ import Calendar from './img/calendar-svgrepo-com.svg'
 function Ficha(props) {
   return (
     <div style={{marginTop:'30px'}}>
-        <div className='puesto'>{props.puesto}</div>
-        <div className='empresa'>{props.empresa}</div>
-        <div className='fecha'><img alt="" src={Calendar} width='20px' style={{marginBottom: '10px'}} />{props.fechas}</div>
-        <ul>{props.datos.map((d,index)=> (<li  className='trabajo' key={index}> {d} </li>))}</ul>
+        <h3 className='miPuesto'>{props.puesto}</h3>
+        <h4 className='miEmpresa'>{props.empresa}</h4>
+        <h5 className='miFecha'><img alt="" src={Calendar}/>{props.fechas}</h5>
+        <dt>{props.datos.map((d,index)=> (<dl  className='miTrabajo' key={index}> {d} </dl>))}</dt>
     </div>
   )
 }

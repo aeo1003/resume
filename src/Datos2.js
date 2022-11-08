@@ -3,7 +3,7 @@ import React, { useContext } from 'react'
 import Mail from './img/mail-svgrepo-com.svg'
 import Home from './img/home-svgrepo-com.svg'
 import Phone from './img/phone-svgrepo-com.svg'
-import World from './img/world-svgrepo-com.svg'
+// import World from './img/world-svgrepo-com.svg'
 
 
 import { datosContexto } from './contexto/Contexto'
@@ -12,15 +12,80 @@ import Ficha from './Ficha'
 function Datos2() {
     const {miJson} = useContext(datosContexto)
 
-
-/*
-    <h5><img width="20" alt="" src={World} style={{marginRight:'15px'}} />                             
-                            LinkdIn</h5>                                        
-
-*/
-
     return (
     <>  
+        <div id='personal' className='tarjetaDatos'>
+            <div className='datosPersonales'>
+                <h1>Angel Escribano</h1>
+                <h2>Desarrollador FrontEnd</h2> 
+
+                <div className='cajaEnlaces'>
+                    <div>
+                        <img alt="" src={Mail} />
+                        <a href="mailto:aeo1003@gmail.com">aeo1003@gmail.com</a>
+                    </div>
+                    <div>
+                        <img alt="" src={Phone} />
+                        <a href="tel:+34 661732768">+34 661732768</a>
+                    </div>
+                    <div>
+                        <img alt="" src={Home} />
+                        Gijón, Asturias
+                    </div>
+                </div>      
+            </div>
+        </div>
+        
+       
+        <div  id='formacion'  className='miFormacion'>
+            <h1>Formación</h1>                
+            <ul>
+                <li>Idiomas : español (nativo), inglés (fluido) </li>
+                <li>EGB-BUP-COU-Selectividad.</li>
+                <li>2 años FP-II Informática de Gestión.</li>
+                <li>1 año Computer Science Degree - Cambridge University of East Anglia.</li>
+                <li>Diferentes cursos online y bootcamps.</li>
+            </ul>
+        </div>
+
+        <div className='misSkills'>                                                
+            <div>
+                    <h1>Lenguajes</h1>
+
+                    <dt>JavaScript</dt>
+                    <dt>C#</dt>
+                    <dt>Python</dt>
+                    <dt>HTML</dt>
+                    <dt>CSS</dt>                    
+                    <dt>PHP</dt>
+            </div>   
+        
+            <div>
+                    <h1>Librerías</h1>
+                <dt>
+                    <dl>React</dl>                    
+                    <dl>jQuery</dl>                    
+                </dt>
+
+            </div>                                   
+        </div>
+
+
+        <div  id='experiencia'  className='miExperiencia'>                
+            <h1>
+                Experiencia
+            </h1>
+
+            {miJson.map(d=>           
+            <Ficha key={d.empresa} puesto={d.puesto} empresa={d.empresa} fechas={d.fechas} datos={d.datos}/>            
+            )}
+
+        </div>
+
+
+
+
+        {/*        
         <div className='todo'>
             <section>
                 <article className='cajaDatos'>
@@ -99,6 +164,7 @@ function Datos2() {
                 </article>
             </section>
         </div>
+        */}
     </>
   )
 }

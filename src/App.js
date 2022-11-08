@@ -11,7 +11,9 @@ function App() {
 // <MyHeader />
   return (
     <>
+      
       <DatosJson>
+        <MyHeader />
         <Datos2 />
       </DatosJson>
     </>
