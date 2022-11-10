@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.5bc65328.css",
+    "main.css": "/resume/static/css/main.59840618.css",
     "main.js": "/resume/static/js/main.d70a8ad5.js",
     "static/media/TheanoDidot-Regular.ttf": "/resume/static/media/TheanoDidot-Regular.1fb7644d6925a261981d.ttf",
     "static/media/Bodidota.ttf": "/resume/static/media/Bodidota.7a082130184d3572dbd8.ttf",
     "static/media/calendar-svgrepo-com.svg": "/resume/static/media/calendar-svgrepo-com.1e782aa664a611fb05086ebbb9edf8d6.svg",
     "index.html": "/resume/index.html",
-    "main.5bc65328.css.map": "/resume/static/css/main.5bc65328.css.map",
+    "main.59840618.css.map": "/resume/static/css/main.59840618.css.map",
     "main.d70a8ad5.js.map": "/resume/static/js/main.d70a8ad5.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bc65328.css",
+    "static/css/main.59840618.css",
     "static/js/main.d70a8ad5.js"
   ]
 }
