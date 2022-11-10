@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.aa8c349e.css",
+    "main.css": "/resume/static/css/main.eadba450.css",
     "main.js": "/resume/static/js/main.44e0b13c.js",
     "static/js/703.003d795b.chunk.js": "/resume/static/js/703.003d795b.chunk.js",
     "static/js/262.7a0873b0.chunk.js": "/resume/static/js/262.7a0873b0.chunk.js",
@@ -8,13 +8,13 @@
     "static/media/Bodidota.ttf": "/resume/static/media/Bodidota.7a082130184d3572dbd8.ttf",
     "static/media/calendar-svgrepo-com.svg": "/resume/static/media/calendar-svgrepo-com.1e782aa664a611fb05086ebbb9edf8d6.svg",
     "index.html": "/resume/index.html",
-    "main.aa8c349e.css.map": "/resume/static/css/main.aa8c349e.css.map",
+    "main.eadba450.css.map": "/resume/static/css/main.eadba450.css.map",
     "main.44e0b13c.js.map": "/resume/static/js/main.44e0b13c.js.map",
     "703.003d795b.chunk.js.map": "/resume/static/js/703.003d795b.chunk.js.map",
     "262.7a0873b0.chunk.js.map": "/resume/static/js/262.7a0873b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa8c349e.css",
+    "static/css/main.eadba450.css",
     "static/js/main.44e0b13c.js"
   ]
 }
