@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.eadba450.css",
-    "main.js": "/resume/static/js/main.44e0b13c.js",
+    "main.css": "/resume/static/css/main.d16457b0.css",
+    "main.js": "/resume/static/js/main.6f7c44cb.js",
     "static/js/703.003d795b.chunk.js": "/resume/static/js/703.003d795b.chunk.js",
     "static/js/262.7a0873b0.chunk.js": "/resume/static/js/262.7a0873b0.chunk.js",
     "static/media/TheanoDidot-Regular.ttf": "/resume/static/media/TheanoDidot-Regular.1fb7644d6925a261981d.ttf",
     "static/media/Bodidota.ttf": "/resume/static/media/Bodidota.7a082130184d3572dbd8.ttf",
     "static/media/calendar-svgrepo-com.svg": "/resume/static/media/calendar-svgrepo-com.1e782aa664a611fb05086ebbb9edf8d6.svg",
     "index.html": "/resume/index.html",
-    "main.eadba450.css.map": "/resume/static/css/main.eadba450.css.map",
-    "main.44e0b13c.js.map": "/resume/static/js/main.44e0b13c.js.map",
+    "main.d16457b0.css.map": "/resume/static/css/main.d16457b0.css.map",
+    "main.6f7c44cb.js.map": "/resume/static/js/main.6f7c44cb.js.map",
     "703.003d795b.chunk.js.map": "/resume/static/js/703.003d795b.chunk.js.map",
     "262.7a0873b0.chunk.js.map": "/resume/static/js/262.7a0873b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eadba450.css",
-    "static/js/main.44e0b13c.js"
+    "static/css/main.d16457b0.css",
+    "static/js/main.6f7c44cb.js"
   ]
 }
