@@ -7,9 +7,10 @@ function Ficha(props) {
         <h3 className='miPuesto'>{props.puesto}</h3>
         <h4 className='miEmpresa'>{props.empresa}</h4>
         <h5 className='miFecha'><img alt="" src={Calendar}/>{props.fechas}</h5>
-        <dt>{props.datos.map((d,index)=> (<dl  className='miTrabajo' key={index}> {d} </dl>))}</dt>
+        {console.log(props.datos[0])}
+        <dt>{props.datos.map((d,index)=> (<dl  className='miTrabajo' key={index}> {d} </dl>))}</dt> 
     </div>
   )
 }
 
-export default Ficha
+export default Ficha 

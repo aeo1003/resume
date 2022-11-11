@@ -7,10 +7,10 @@ export const DatosJson = ({ children }) => {
     
     const tempJson = [
         {
-            puesto: 'FullStack Developer',
+            puesto: 'Desarrollador Fullstack',
             empresa: 'Proyecto personal',
             fechas: 'Marzo 2021- ahora',
-            datos: ['Desarrolo de proyecto empresarial','nodeJS, JavaScript, React, Python']
+            datos:  ['Desarrolo de proyecto empresarial.','NodeJS, JavaScript, React, Python.']                                
         },
         {
             puesto: 'FrontEnd Developer',

@@ -10,18 +10,20 @@
 
 
 body {
+  width: 100%;
   margin: 0;
   font-family: 'didot', serif;
 }
 
-.header { 
+.header {
     display: flex;
     justify-content: space-around;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(243, 5, 5);
     align-items: center;
     background-color: white;
     position: sticky;
-    top: 0px;
+    top: 0px;    
+    font-size: 5vw;
 }
 
 /*
@@ -33,7 +35,6 @@ body {
 
 .header a {
   color: black;
-  font-size: 2rem;
   text-decoration: none;
 }
 
@@ -43,27 +44,32 @@ body {
 }
 */
 
-.tarjetaDatos {
-  width: 100%;
+.tarjetaDatos {  
   display: flex;
   top:auto;
-  justify-content: space-evenly;
   background-color: rgb(61, 18, 2);
+  align-items: center;
+  justify-content: space-around;
   padding: 20px;
 }
 
-.datosPersonales {  
+.datosPersonales {
   font-size: 1.8em;
-  color: #eeeeee;  
+  display: flex;
+  color:#dddddd;
+  flex-direction: column;
+  align-items: center;
 }
 
-.datosPersonales h1 {  
-  margin-top:auto;
-  padding-bottom: 20px;
+.datosPersonales h1 {
+  margin-top: 5vw;
+  text-align: center;
 }
 
-.datosPersonales h2 {  
-  margin-top:0px;  
+.datosPersonales h2 {
+  margin-top: 0px;
+  padding: 1%;
+  text-align: center;
 }
 
 .cajaEnlaces {
@@ -88,17 +94,23 @@ body {
 }
 
 .cajaEnlaces div img {
-  width: 8%;
+  width: 1em;
   margin-right: 20px;
+}
+
+.descargaPDF {
+  font-size: 1em;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 .miFormacion {
   margin-top: 0px;
   margin-bottom: -20px;
   padding-top: 1vh;
-  padding-left: 5%;
+  padding-left: 10%;
   padding-right: 5%;
-  font-size: 24px;
+  font-size: 1.8em;
 }
 .miFormacion ul li {
   font-size: 1em;
@@ -121,6 +133,7 @@ body {
   display: flex;
   justify-content: space-around;
   font-size: 1.5rem;
+  padding-bottom: 30px;
 }
 
 .misSkills div dt {
@@ -132,19 +145,18 @@ body {
 .miExperiencia {
   background-color: #dddddd;
   margin-top: 0px;
-  padding-top: 1vh;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 5vh;
+
 }
 
 .miExperiencia h1 {
-  font-size: 48px;
+  font-size: 3em;  
 }
 
 .miPuesto {
   font-size: 2.2rem;
   margin-top: 0;
-  padding-top: 8vw;
+  padding-top: 3vw;
   margin-bottom: 0;
 }
 
@@ -158,7 +170,7 @@ body {
 
 
 .miFecha {
-  font-size: 1.2rem;
+  font-size: 2rem;
   display: flex;  
   justify-content: left;
   align-items: center;
@@ -166,7 +178,7 @@ body {
 }
 
 .miFecha img {
-  width: 4%;
+  width: 2rem;
   margin-right: 1vw;
 }
 
@@ -182,35 +194,42 @@ body {
 
 
 
-/* @media only screen and (min-width:1081px){ */
-@media (orientation: landscape) and (min-width:1080px) {
-/* @media (min-width:1081px), screen and (orientation:portrait) { */
+
+
+
+
+/* @media only screen and (min-width:1080px){ 
+ @media (orientation: landscape), (min-width:1080px) {
+@media (min-width:1600px), screen and (orientation:portrait) { */
+
+  @media (min-width:1080px),(orientation: landscape) {
   
   .tarjetaDatos {
     width: 100%;
     display: flex;
-    justify-content: space-around;
     background-color: rgb(61, 18, 2);
     padding-top: 20px;
+    justify-content: space-between;
+  }
+
+  .datosPersonales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
   }
 
   .datosPersonales h1 {
     margin-top: 0px;
-    text-align: center;
     margin-bottom: -20px;
     padding-top: 30px;
   }
 
   .datosPersonales h2 {
-    text-align: center;
     margin-top: 0px;
     padding-bottom: 1%;
   }
   
-  .datosPersonales div {
-    display: flex;
-    flex-direction: row;    
-  }
 
 
   .cajaEnlaces {

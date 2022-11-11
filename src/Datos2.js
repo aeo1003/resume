@@ -5,6 +5,8 @@ import Home from './img/home-icon.png'
 import Phone from './img/phone-icon.png'
 // import World from './img/world-svgrepo-com.svg'
 
+import html2canvas from 'html2canvas'
+import jsPDF from 'jspdf'
 
 import { datosContexto } from './contexto/Contexto'
 import Ficha from './Ficha'
@@ -12,19 +14,51 @@ import Ficha from './Ficha'
 function Datos2() {
     const {miJson} = useContext(datosContexto)
 
+
+    const exportPDF = () => {
+        const input = document.getElementById("datos2");
+        html2canvas(input).then(canvas =>{
+            const imgWidth = 208;
+            const pageHeight = 295;
+            const imgHeight = (canvas.height * imgWidth) / canvas.width;
+            let heightLeft = imgHeight;
+            let position = 0;
+            heightLeft -= pageHeight;
+            const doc = new jsPDF('p','mm');
+            doc.addImage(canvas, 'PNG', 0, position, imgWidth, imgHeight, '', 'FAST');
+            while (heightLeft >= 0) {
+                position = heightLeft - imgHeight;
+                doc.addPage();
+                doc.addImage(canvas, 'PNG', 0, position, imgWidth, imgHeight, '', 'FAST');
+                heightLeft -= pageHeight;
+            }
+            doc.save('cv.pdf')
+        })
+
+        /*
+        html2canvas(input, {logging: true, letterRendering: 2, useCORS: true})
+            .then(canvas => {
+                const imgWidth = 208;
+                const imgHeight = canvas.height * imgWidth / canvas.width;
+                const imgData = canvas.toDataURL('img/png');
+                const pdf = new jsPDF('p','mm','a4');
+                pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+                pdf.save("cv.pdf");
+            })
+        */
+    }
     return (
     <>  
+        <div id="datos2">
         <div id='personal' className='tarjetaDatos'>
             <div className='datosPersonales'>
                 <h1>Angel Escribano</h1>
                 <h2>Desarrollador FrontEnd</h2> 
+                <button className='descargaPDF' onClick={() => exportPDF()}>DESCARGA EL PDF</button>
             </div>
 
             <div className='cajaEnlaces'>
-                <div>
-                    <img alt="" src={Mail} />
-                    <a href="mailto:aeo1003@gmail.com">aeo1003@gmail.com</a>
-                </div>
+               
                 <div>
                     <img alt="" src={Phone} />
                     <a href="tel:+34 661732768">+34 661732768</a>
@@ -33,10 +67,15 @@ function Datos2() {
                     <img alt="" src={Home} />
                     Gijón, Asturias
                 </div>
+                <div>
+                    <img alt="" src={Mail} />
+                    <a href="mailto:aeo1003@gmail.com">aeo1003@gmail.com</a>
+                </div>
             </div>      
-            
-        </div>
         
+
+        </div>
+       
        
         <div  id='formacion'  className='miFormacion'>
             <h1>Formación</h1>                
@@ -81,7 +120,7 @@ function Datos2() {
 
         </div>
 
-
+    </div>
 
 
         {/*        
