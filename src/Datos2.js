@@ -3,6 +3,8 @@ import React, { useContext } from 'react'
 import Mail from './img/mail-icon.png'
 import Home from './img/home-icon.png'
 import Phone from './img/phone-icon.png'
+import Spain from './img/spain.png'
+import UK from './img/uk.png'
 // import World from './img/world-svgrepo-com.svg'
 
 import html2canvas from 'html2canvas'
@@ -12,10 +14,11 @@ import { datosContexto } from './contexto/Contexto'
 import Ficha from './Ficha'
 
 function Datos2() {
-    const {miJson} = useContext(datosContexto)
 
+    const {miJson,miEnJson,language, setLanguage} = useContext(datosContexto)
 
     const exportPDF = () => {
+        document.getElementById("pdf").style.display = 'none';
         const input = document.getElementById("datos2");
         html2canvas(input).then(canvas =>{
             const imgWidth = 208;
@@ -33,7 +36,8 @@ function Datos2() {
                 heightLeft -= pageHeight;
             }
             doc.save('cv.pdf')
-        })
+        })        
+        document.getElementById("pdf").style.display = 'flex';
 
         /*
         html2canvas(input, {logging: true, letterRendering: 2, useCORS: true})
@@ -47,18 +51,34 @@ function Datos2() {
             })
         */
     }
+                const educ = ['Idiomas : español (nativo), inglés (fluido)','EGB-BUP-COU-Selectividad.','2 años FP-II Informática de Gestión.',
+            '1 año Computer Science Degree - Cambridge University of East Anglia.','Microsoft - MCSE','Diferentes cursos online y bootcamps.' ]
+                const educEn = ['Languages : Spanish (native), English (fluent)','Computer Science B-Tech.',
+            '1 year Computer Science Degree - Cambridge University of East Anglia.','Microsoft - MCSE','Several online courses and bootcamps.' ]
+
+
     return (
     <>  
         <div id="datos2">
         <div id='personal' className='tarjetaDatos'>
             <div className='datosPersonales'>
                 <h1>Angel Escribano</h1>
-                <h2>Desarrollador FrontEnd</h2> 
-                <button className='descargaPDF' onClick={() => exportPDF()}>DESCARGA EL PDF</button>
+                {language === 'es'     
+                    ? <h2>Desarrollador FrontEnd</h2>
+                    : <h2>FrontEnd Developer</h2>
+                }
+                {language === 'es' 
+                ? <button id='pdf' className='descargaPDF' onClick={() => exportPDF()}>DESCARGA EL PDF</button>
+                : <button id='pdf' className='descargaPDF' onClick={() => exportPDF()}>PDF DOWNLOAD</button>
+                }
             </div>
 
             <div className='cajaEnlaces'>
-               
+                
+                <div>
+                    <img alt="" src={Mail} />
+                    <a href="mailto:aeo1003@gmail.com">aeo1003@gmail.com</a>
+                </div>
                 <div>
                     <img alt="" src={Phone} />
                     <a href="tel:+34 661732768">+34 661732768</a>
@@ -67,56 +87,72 @@ function Datos2() {
                     <img alt="" src={Home} />
                     Gijón, Asturias
                 </div>
-                <div>
-                    <img alt="" src={Mail} />
-                    <a href="mailto:aeo1003@gmail.com">aeo1003@gmail.com</a>
+                <div className='flags'>
+                    <img alt='spanish flag' src={Spain} onClick={()=>setLanguage('es')} />
+                    <img alt='uk flag' src={UK} onClick={()=>setLanguage('en')} />
                 </div>
+                
             </div>      
         
 
         </div>
        
        
-        <div  id='formacion'  className='miFormacion'>
-            <h1>Formación</h1>                
-                <ul>
-                    <li>Idiomas : español (nativo), inglés (fluido) </li>
-                    <li>EGB-BUP-COU-Selectividad.</li>
-                    <li>2 años FP-II Informática de Gestión.</li>
-                    <li>1 año Computer Science Degree - Cambridge University of East Anglia.</li>
-                    <li>Diferentes cursos online y bootcamps.</li>
-                </ul>
-          
+       <div className='cajaFormacion'>
+                <div  id='formacion'  className='miFormacion'>
+                    {language === 'es'                
+                        ? <h1>Formación</h1>
+                        : <h1>Education</h1>
+                    }
+
+                    {language === 'es'
+                    ? educ.map((e,index)=>(<li key={index}>{e}</li>))
+                    : educEn.map((e,index)=>(<li key={index}>{e}</li>))
+                }
+
+                                     
+                </div>
+
+            <div className='lang'>
+                <div>                    
+                    {language === 'es'                
+                        ? <h1>Lenguajes</h1>
+                        : <h1>Languages</h1>
+                    }
+
+                    <li>JavaScript</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>                    
+                    <li>PHP</li>  
+                </div>
+
+                <div>
+                    {language === 'es'                
+                        ? <h1>Librerías</h1>
+                        : <h1>Libraries</h1>
+                    }
+
+                    <li>React</li>                    
+                    <li>jQuery</li>                                   
+                </div>
+            </div>
+                
+
         </div>
 
-        <div className='misSkills'>                                                
-            <div>
-                    <h1>Lenguajes</h1>
 
-                    <dt>JavaScript</dt>
-                    <dt>C#</dt>
-                    <dt>Python</dt>
-                    <dt>HTML</dt>
-                    <dt>CSS</dt>                    
-                    <dt>PHP</dt>
-            </div>   
-        
-            <div>
-                    <h1>Librerías</h1>               
-                    <dt>React</dt>                    
-                    <dt>jQuery</dt>                                   
-            </div>                                   
-        </div>
-
-
-        <div  id='experiencia'  className='miExperiencia'>                
-            <h1>
-                Experiencia
-            </h1>
-
-            {miJson.map(d=>           
-            <Ficha key={d.empresa} puesto={d.puesto} empresa={d.empresa} fechas={d.fechas} datos={d.datos}/>            
-            )}
+        <div  id='experiencia'  className='miExperiencia'>
+        {language === 'es'                
+            ? <h1>Experiencia Laboral</h1>
+            : <h1>Work Experience</h1>
+        }
+            
+            {language === 'es' 
+                ? miJson.map(d=><Ficha className='ficha' key={d.empresa} puesto={d.puesto} empresa={d.empresa} fechas={d.fechas} datos={d.datos}/>)
+                : miEnJson.map(d=><Ficha key={d.empresa} puesto={d.puesto} empresa={d.empresa} fechas={d.fechas} datos={d.datos}/>)            
+            }
 
         </div>
 

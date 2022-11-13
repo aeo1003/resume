@@ -1,5 +1,5 @@
 import React from 'react'
-import Calendar from './img/calendar-svgrepo-com.svg'
+import Calendar from './img/calendar-svgrepo-com.png'
 
 function Ficha(props) {
   return (
@@ -7,7 +7,6 @@ function Ficha(props) {
         <h3 className='miPuesto'>{props.puesto}</h3>
         <h4 className='miEmpresa'>{props.empresa}</h4>
         <h5 className='miFecha'><img alt="" src={Calendar}/>{props.fechas}</h5>
-        {console.log(props.datos[0])}
         <dt>{props.datos.map((d,index)=> (<dl  className='miTrabajo' key={index}> {d} </dl>))}</dt> 
     </div>
   )

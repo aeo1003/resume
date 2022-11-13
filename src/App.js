@@ -10,7 +10,7 @@ function App() {
     <>
       
       <DatosJson>
-        <MyHeader />
+       {/* <MyHeader /> */}
         <Datos2 />
       </DatosJson>
     </>
