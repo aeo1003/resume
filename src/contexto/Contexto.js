@@ -17,7 +17,7 @@ export const DatosJson = ({ children }) => {
             empresa: 'ENEO Technologies',
             fechas: 'Julio 2020-Febrero 2021',
             datos: ['Desarrollo de software de ciberseguridad - IPS/IDS. Proyecto RedBorder.',
-            'Análisis de tráfico de red (sflow) y detección de amenazas en tiempo real con Snort.',
+            'Análisis de tráfico de red (sflow) y detección de amenazas en tiempo real contra la base de datos de SNORT.',
             'Uso de diferentes lenguajes y herramientas: HTML, CSS, JS, Python, Bash scripting, RegEx, todo en un entorno Linux CentOs',
             'Software en la parte Big Data : Kafka, Chef, Logstash']
         },
@@ -25,7 +25,7 @@ export const DatosJson = ({ children }) => {
             puesto: 'Desarrollador FrontEnd / SysAdmin / Soporte',
             empresa: 'Atos',
             fechas: 'Enero 2017-Enero 2020',
-            datos: ['Desarrollo de software en Seat de software para control de inventario; Backend:  MySQL y PHP. Frontend: HTML, JavaScript, jQuery y Bootstrap.',
+            datos: ['Desarrollo de software para control de inventario en Seat; Backend:  MySQL y PHP. Frontend: HTML, JavaScript, jQuery y Bootstrap.',
             'Administración de sistemas Windows Server en Acciona,Cepsa y Axa. He estado involucrado en diferentes proyectos de administación de sistemas :administración de Active Directory, configuración y administración de SCCM, security policies, scripting en Powershell...',
             'Soporte técnico L2 en Honda y Acciona']
         },
@@ -73,7 +73,7 @@ export const DatosJson = ({ children }) => {
             empresa: 'Atos',
             fechas: 'January 2017-January 2020',
             datos: ['Inventory tracking software development at Seat; Backend:  MySQL y PHP. Frontend: HTML, JavaScript, jQuery and Bootstrap.',
-            'Windows Server sysadmin at Acciona,Cepsa and Axa. I\'ve been involved in several system administration projects : AD administration, SCCM administration and configuration, security policies, owershell scripting...',
+            'Windows Server sysadmin at Acciona,Cepsa and Axa. I\'ve been involved in several system administration projects : AD administration, SCCM administration and configuration, security policies, Powershell scripting...',
             'L2 technical support at Honda and Acciona']
         },
         {
@@ -81,7 +81,7 @@ export const DatosJson = ({ children }) => {
             empresa: 'Club la Costa, Hotels and Resorts',
             fechas: 'January 2004 - January 2015',
             datos: ['Managing the IT department for the Canary Islands hub',
-            'In charge of a team involved in the all kind of projects: network infrastructure, user support, software development, Windows Server administration... ']
+            'In charge of a team involved in all kinds of projects: network infrastructure, user support, software development, Windows Server administration... ']
         },
         {
             puesto: 'IT Manager',
