@@ -5,10 +5,9 @@ import Home from './img/home-icon.png'
 import Phone from './img/phone-icon.png'
 import Spain from './img/spain.png'
 import UK from './img/uk.png'
-// import World from './img/world-svgrepo-com.svg'
+import myCV from './contexto/CV-Frontend.pdf'
+import myCVen from './contexto/CV-Frontend-en.pdf'
 
-import html2canvas from 'html2canvas'
-import jsPDF from 'jspdf'
 
 import { datosContexto } from './contexto/Contexto'
 import Ficha from './Ficha'
@@ -16,45 +15,11 @@ import Ficha from './Ficha'
 function Datos2() {
 
     const {miJson,miEnJson,language, setLanguage} = useContext(datosContexto)
-
-    const exportPDF = () => {
-        document.getElementById("pdf").style.display = 'none';
-        const input = document.getElementById("datos2");
-        html2canvas(input).then(canvas =>{
-            const imgWidth = 208;
-            const pageHeight = 295;
-            const imgHeight = (canvas.height * imgWidth) / canvas.width;
-            let heightLeft = imgHeight;
-            let position = 0;
-            heightLeft -= pageHeight;
-            const doc = new jsPDF('p','mm');
-            doc.addImage(canvas, 'PNG', 0, position, imgWidth, imgHeight, '', 'FAST');
-            while (heightLeft >= 0) {
-                position = heightLeft - imgHeight;
-                doc.addPage();
-                doc.addImage(canvas, 'PNG', 0, position, imgWidth, imgHeight, '', 'FAST');
-                heightLeft -= pageHeight;
-            }
-            doc.save('cv.pdf')
-        })        
-        document.getElementById("pdf").style.display = 'flex';
-
-        /*
-        html2canvas(input, {logging: true, letterRendering: 2, useCORS: true})
-            .then(canvas => {
-                const imgWidth = 208;
-                const imgHeight = canvas.height * imgWidth / canvas.width;
-                const imgData = canvas.toDataURL('img/png');
-                const pdf = new jsPDF('p','mm','a4');
-                pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
-                pdf.save("cv.pdf");
-            })
-        */
-    }
-                const educ = ['Idiomas : español (nativo), inglés (fluido)','EGB-BUP-COU-Selectividad.','2 años FP-II Informática de Gestión.',
-            '1 año Computer Science Degree - Cambridge University of East Anglia.','Microsoft - MCSE','Diferentes cursos online y bootcamps.' ]
-                const educEn = ['Languages : Spanish (native), English (fluent)','Computer Science B-Tech.',
-            '1 year Computer Science Degree - Cambridge University of East Anglia.','Microsoft - MCSE','Several online courses and bootcamps.' ]
+   
+    const educ = ['Idiomas : español (nativo), inglés (fluido)','EGB-BUP-COU-Selectividad.','2 años FP-II Informática de Gestión.',
+'1 año Computer Science Degree - Cambridge University of East Anglia.','Microsoft - MCSE','Diferentes cursos online y bootcamps.' ]
+    const educEn = ['Languages : Spanish (native), English (fluent)','Computer Science B-Tech.',
+'1 year Computer Science Degree - Cambridge University of East Anglia.','Microsoft - MCSE','Several online courses and bootcamps.' ]
 
 
     return (
@@ -67,10 +32,21 @@ function Datos2() {
                     ? <h2>Desarrollador FrontEnd</h2>
                     : <h2>FrontEnd Developer</h2>
                 }
+{/*
                 {language === 'es' 
                 ? <button id='pdf' className='descargaPDF' onClick={() => exportPDF()}>DESCARGA EL PDF</button>
                 : <button id='pdf' className='descargaPDF' onClick={() => exportPDF()}>PDF DOWNLOAD</button>
                 }
+            */}
+
+                {language === 'es' 
+                ? <a className='pdf' href={myCV} download="CV_Frontend"> Descarga el PDF </a>
+                : <a className='pdf' href={myCVen} download="CV_Frontend_English"> Download the PDF </a>
+                }
+
+
+                
+
             </div>
 
             <div className='cajaEnlaces'>
@@ -136,10 +112,10 @@ function Datos2() {
 
                     <li>React</li>                    
                     <li>jQuery</li>                                   
+                    <li>NodeJs</li>                    
+                    <li>ExpressJs</li>                                   
                 </div>
-            </div>
-                
-
+            </div>    
         </div>
 
 

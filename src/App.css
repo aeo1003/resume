@@ -105,10 +105,9 @@ body {
   width: 2em;  
 }
 
-.descargaPDF {
-  font-size: 1em;
-  padding: 15px;
-  border-radius: 5px;
+.pdf {
+  font-size: 1.5em;
+  color: gold;
 }
 
 
@@ -116,11 +115,6 @@ body {
   padding: 5%;
   padding-top: 2%;
 }
-
-.cajaFormacion h1 { 
-  font-size:  1.2em;
-}
-
 
 .miFormacion {
   margin-top: 0px;
@@ -136,7 +130,7 @@ body {
 
 .lang {
   justify-content: left;
-  font-size: 2.5em;
+ /* font-size: 2.5em; */
   display: flex;
   gap: 50px;
 }
