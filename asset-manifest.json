@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.c98b8e45.css",
-    "main.js": "/resume/static/js/main.1fe37dd4.js",
+    "main.css": "/resume/static/css/main.aaa0f63c.css",
+    "main.js": "/resume/static/js/main.83b2b7ee.js",
     "static/js/703.003d795b.chunk.js": "/resume/static/js/703.003d795b.chunk.js",
     "static/js/262.7a0873b0.chunk.js": "/resume/static/js/262.7a0873b0.chunk.js",
     "static/media/TheanoDidot-Regular.ttf": "/resume/static/media/TheanoDidot-Regular.1fb7644d6925a261981d.ttf",
     "static/media/uk.png": "/resume/static/media/uk.0855d11d456f14d02798.png",
     "static/media/Bodidota.ttf": "/resume/static/media/Bodidota.7a082130184d3572dbd8.ttf",
+    "static/media/CV-Frontend.pdf": "/resume/static/media/CV-Frontend.e655b9ea062a1ddbaeca.pdf",
+    "static/media/CV-Frontend-en.pdf": "/resume/static/media/CV-Frontend-en.34e998a0eec8e27ee145.pdf",
     "static/media/spain.png": "/resume/static/media/spain.68f46dd2e9f0a480e045.png",
     "index.html": "/resume/index.html",
-    "main.c98b8e45.css.map": "/resume/static/css/main.c98b8e45.css.map",
-    "main.1fe37dd4.js.map": "/resume/static/js/main.1fe37dd4.js.map",
+    "main.aaa0f63c.css.map": "/resume/static/css/main.aaa0f63c.css.map",
+    "main.83b2b7ee.js.map": "/resume/static/js/main.83b2b7ee.js.map",
     "703.003d795b.chunk.js.map": "/resume/static/js/703.003d795b.chunk.js.map",
     "262.7a0873b0.chunk.js.map": "/resume/static/js/262.7a0873b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c98b8e45.css",
-    "static/js/main.1fe37dd4.js"
+    "static/css/main.aaa0f63c.css",
+    "static/js/main.83b2b7ee.js"
   ]
 }
