@@ -76,15 +76,15 @@ function Datos2() {
             <div className='cajaEnlaces'>
                 
                 <div>
-                    <img alt="" src={Mail} />
+                    <img className='icon' alt="" src={Mail} />
                     <a href="mailto:aeo1003@gmail.com">aeo1003@gmail.com</a>
                 </div>
                 <div>
-                    <img alt="" src={Phone} />
+                    <img className='icon' alt="" src={Phone} />
                     <a href="tel:+34 661732768">+34 661732768</a>
                 </div>
                 <div>
-                    <img alt="" src={Home} />
+                    <img className='icon' alt="" src={Home} />
                     Gijón, Asturias
                 </div>
                 <div className='flags'>

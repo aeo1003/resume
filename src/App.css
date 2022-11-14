@@ -48,9 +48,9 @@ body {
   display: flex;
   top:auto;
   background-color: rgb(61, 18, 2);
-  align-items: center;
   justify-content: space-around;
-  padding: 20px;
+  padding: 5%;
+
 }
 
 .datosPersonales {  
@@ -62,14 +62,12 @@ body {
 
 .datosPersonales h1 {
   font-size: 3rem;
-  margin-top: 5vw;
   text-align: center;
 }
 
 .datosPersonales h2 {
   font-size: 2rem;
   margin-top: 0px;
-  padding: 1%;
   text-align: center;
 }
 
@@ -91,12 +89,20 @@ body {
 
 .cajaEnlaces div a {
   text-decoration: none;
-  color: #eeeeee;
+  color: #eee;
 }
 
-.cajaEnlaces div img {
+.cajaEnlaces div {
+  gap: 1.5em;
+  
+}
+
+.icon {
   width: 1em;
-  margin-right: 20px;
+}
+
+.flags img {  
+  width: 2em;  
 }
 
 .descargaPDF {
@@ -129,7 +135,7 @@ body {
 
 
 .lang {
-  justify-content: center;
+  justify-content: left;
   font-size: 2.5em;
   display: flex;
   gap: 50px;
@@ -204,8 +210,8 @@ body {
     width: 100%;
     display: flex;
     background-color: rgb(61, 18, 2);
-    padding-top: 20px;
     justify-content: space-around;
+    padding: 2%;
   }
 
   .datosPersonales {
@@ -231,7 +237,10 @@ body {
   
   .flags {
     justify-content: left;
+    gap: 2em;
   }
+
+
 
   .descargaPDF {
     font-size: 1em;
