@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-
+import './App.css'
 import Mail from './img/mail-icon.png'
 import Home from './img/home-icon.png'
 import Phone from './img/phone-icon.png'
@@ -40,17 +40,13 @@ function Datos2() {
             */}
 
                 {language === 'es' 
-                ? <a className='pdf' href={myCV} download="CV_Frontend"> Descarga el PDF </a>
-                : <a className='pdf' href={myCVen} download="CV_Frontend_English"> Download the PDF </a>
+                ? <a className='pdf' href={myCV} download="CV_Frontend"><button className='botonpdf'> Descarga el PDF </button></a>
+                : <a className='pdf' href={myCVen} download="CV_Frontend_English"> <button className='botonpdf'> Download the PDF </button> </a>
                 }
-
-
-                
 
             </div>
 
-            <div className='cajaEnlaces'>
-                
+            <div className='cajaEnlaces'>                
                 <div>
                     <img className='icon' alt="" src={Mail} />
                     <a href="mailto:aeo1003@gmail.com">aeo1003@gmail.com</a>
@@ -66,57 +62,62 @@ function Datos2() {
                 <div className='flags'>
                     <img alt='spanish flag' src={Spain} onClick={()=>setLanguage('es')} />
                     <img alt='uk flag' src={UK} onClick={()=>setLanguage('en')} />
-                </div>
-                
+                </div>                
             </div>      
         
 
         </div>
        
        
-       <div className='cajaFormacion'>
-                <div  id='formacion'  className='miFormacion'>
-                    {language === 'es'                
-                        ? <h1>Formación</h1>
-                        : <h1>Education</h1>
-                    }
 
-                    {language === 'es'
-                    ? educ.map((e,index)=>(<li key={index}>{e}</li>))
-                    : educEn.map((e,index)=>(<li key={index}>{e}</li>))
+        <article className='cajaFormacion'>
+
+            <div className='miFormacion'>
+                {language === 'es'                
+                    ? <p>Formación</p>
+                    : <p>Education</p>
                 }
-
-                                     
-                </div>
-
+                <ul> 
+                    { language === 'es'
+                        ? educ.map((e,index)=>(<li key={index}>{e}</li>))
+                        : educEn.map((e,index)=>(<li key={index}>{e}</li>))
+                    }
+                </ul>                
+            </div>
+            
             <div className='lang'>
                 <div>                    
                     {language === 'es'                
-                        ? <h1>Lenguajes</h1>
-                        : <h1>Languages</h1>
+                        ? <p>Lenguajes</p>
+                        : <p>Languages</p>
                     }
-
-                    <li>JavaScript</li>
-                    <li>C#</li>
-                    <li>Python</li>
-                    <li>HTML</li>
-                    <li>CSS</li>                    
-                    <li>PHP</li>  
+                    <ul> 
+                        <li>JavaScript</li>
+                        <li>C#</li>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>CSS</li>                    
+                        <li>PHP</li>
+                    </ul>
                 </div>
 
                 <div>
                     {language === 'es'                
-                        ? <h1>Librerías</h1>
-                        : <h1>Libraries</h1>
+                        ? <p>Librerías</p>
+                        : <p>Libraries</p>
                     }
-
-                    <li>React</li>                    
-                    <li>jQuery</li>                                   
-                    <li>NodeJs</li>                    
-                    <li>ExpressJs</li>                                   
+                    <ul>
+                        <li>React</li>                    
+                        <li>jQuery</li>                                   
+                        <li>NodeJs</li>                    
+                        <li>ExpressJs</li>                                   
+                    </ul>
                 </div>
-            </div>    
-        </div>
+            </div>
+            
+        </article>
+
+        
 
 
         <div  id='experiencia'  className='miExperiencia'>
@@ -135,86 +136,6 @@ function Datos2() {
     </div>
 
 
-        {/*        
-        <div className='todo'>
-            <section>
-                <article className='cajaDatos'>
-                    <h1 className='nombre'>Angel Escribano</h1>
-                    <h2 className='subtitulo'>Front-End Developer</h2>  
-                            
-                    <div className='iconos'>                            
-                        
-                        <h5><img width="20" alt="" src={Mail} style={{marginRight:'15px'}}/> 
-                            <a href="mailto:aeo1003@gmail.com">
-                                aeo1003@gmail.com
-                            </a> </h5>
-                        
-                            <h5><img width="20" alt="" src={Phone} style={{marginRight:'15px'}}/>                                 
-                            <a href='tel:+34 661 732 768' >
-                                    +34 661 732 768
-                            </a> </h5>
-                        
-                            <h5><img width="20" alt="" src={Home} style={{marginRight:'15px'}} />  
-                            Gijón, Asturias </h5>
-                                                
-                    </div>
-                </article>
-
-                <article className='mySkills'>
-
-                    <div className='tituloSkills'>
-                        Formación
-                    </div>
-                    
-                    <dt className='formacion'>
-                        <dl>Idiomas : español (nativo), inglés (fluido) </dl>
-                        <dl>EGB-BUP-COU-Selectividad.</dl>
-                        <dl>2 años FP-II Informática de Gestión.</dl>
-                        <dl>1 año Computer Science Degree - Cambridge University of East Anglia.</dl>
-                        <dl>Diferentes cursos online y bootcamps.</dl>
-                    </dt>
-                    
-                    <div  style={{marginLeft:'var(--margen-izquierdo)'}} className='tituloSkills'>                                                
-                        <div>
-                                Lenguajes                        
-                            <dt>
-                                <dl>JavaScript</dl>
-                                <dl>C#</dl>
-                                <dl>Python</dl>
-                                <dl>HTML</dl>
-                                <dl>CSS</dl>                    
-                                <dl>PHP</dl>                    
-                            </dt>
-                        </div>   
-                    
-                        <div>
-                                Librerías                       
-                            <dt>
-                                <dl>React</dl>
-                                <dl>jQuery</dl>
-                            </dt>
-                        </div>                                   
-                    </div>
-                
-                </article>
-            </section> 
-
-
-
-            <section>
-                <article className='experiencia'>                
-                    <div className='titulo'>
-                            EXPERIENCIA LABORAL
-                    </div>
-
-                    {miJson.map(d=>           
-                    <Ficha key={d.empresa} puesto={d.puesto} empresa={d.empresa} fechas={d.fechas} datos={d.datos}/>            
-                    )}
-
-                </article>
-            </section>
-        </div>
-        */}
     </>
   )
 }
