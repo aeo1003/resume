@@ -10,7 +10,8 @@
 body {
   width: 100%;
   margin: 0;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
   /* font-family: 'didot', sans-serif; */
 }
 

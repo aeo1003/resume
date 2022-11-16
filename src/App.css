@@ -12,8 +12,11 @@
 body {
   width: 100%;
   margin: 0;
+  font-size: 100%;
   /* font-family: 'didot', sans-serif; */
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
+  
+
 }
 
 .tarjetaDatos {  
@@ -82,7 +85,11 @@ body {
 
 
 .miFormacion {
+  
+  display:grid;
+  grid-template-columns: auto;
   padding: 5%;
+  
 }
 
 .miFormacion p {
@@ -90,25 +97,37 @@ body {
   font-weight: 700;
 }
 
-.miFormacion ul li {
-  font-size: .7em;
+.miFormacion li {
+  font-size: 0.7em;
+  
 }
+
+
 
 .lang {
   display:grid;
   grid-template-columns: auto auto;
+  padding: 5%;
+  /*
   padding-left: 5%;
   padding-bottom: 5%;
+  padding-top:5%; 
+  */
 }
+
 
 .lang p {
   font-size: 2em;
   font-weight: 700;
 }
 
+
 .lang li {
+  /* font-size: clamp(2.3rem, 1em, 1.7rem); */
   font-size: .7em;
+  
 }
+
 
 
 
@@ -182,7 +201,7 @@ body {
     display: flex;
     background-color: rgb(61, 18, 2);
     justify-content: space-around;
-    padding: 2%;
+    
   }
 
   .datosPersonales {
@@ -196,7 +215,7 @@ body {
     margin-top: 0px;
     margin-bottom: -2%;
     padding-top: 30px;
-    font-size: 2.3em;
+    font-size: 2.8em;
   }
 
   .datosPersonales h2 {    
@@ -216,6 +235,7 @@ body {
 
   .botonpdf:hover {
     font-size: 1.5em;
+    text-align: center;
     color: #fff;
     border: 2px solid grey;
     background-color: #222;
@@ -226,6 +246,11 @@ body {
     justify-content: center;
     width: 40%;
     font-size: 1.5em;
+  }
+
+  .cajaEnlaces a:hover {
+    font-size: larger;
+    color: gold;
   }
 
 

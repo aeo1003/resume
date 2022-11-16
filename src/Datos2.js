@@ -73,19 +73,20 @@ function Datos2() {
         <article className='cajaFormacion'>
 
             <div className='miFormacion'>
-                {language === 'es'                
-                    ? <p>Formación</p>
-                    : <p>Education</p>
-                }
-                <ul> 
-                    { language === 'es'
-                        ? educ.map((e,index)=>(<li key={index}>{e}</li>))
-                        : educEn.map((e,index)=>(<li key={index}>{e}</li>))
+                <div>
+                    {language === 'es'                
+                        ? <p>Formación</p>
+                        : <p>Education</p>
                     }
-                </ul>                
-            </div>
-            
-            <div className='lang'>
+                    <ul> 
+                        { language === 'es'
+                            ? educ.map((e,index)=>(<li key={index}>{e}</li>))
+                            : educEn.map((e,index)=>(<li key={index}>{e}</li>))
+                        }
+                    </ul>
+                </div>
+
+
                 <div>                    
                     {language === 'es'                
                         ? <p>Lenguajes</p>
@@ -113,9 +114,17 @@ function Datos2() {
                         <li>ExpressJs</li>                                   
                     </ul>
                 </div>
+
+
             </div>
-            
-        </article>
+          {/*
+            <div className='lang'>
+                
+
+            </div>
+        */}
+        </article>   
+        
 
         
 
