@@ -5,7 +5,7 @@ export const datosContexto = createContext();
 
 export const DatosJson = ({ children }) => {
     
-    const esJson = [ 
+    const esJson = [
         {
             puesto: 'Desarrollador FrontEnd',
             empresa: 'La Caixa',
