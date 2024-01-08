@@ -5,7 +5,14 @@ export const datosContexto = createContext();
 
 export const DatosJson = ({ children }) => {
     
-    const esJson = [  
+    const esJson = [ 
+        {
+            puesto: 'Desarrollador FrontEnd',
+            empresa: 'La Caixa',
+            fechas: 'Diciembre 2022 - Junio 2023',
+            datos: ['Desarrollo de SPA y aplicaciones web',                        
+            'ReactJS, Javascript, CSS, Jest, Github']
+        },
         {
             puesto: 'Desarrollador Fullstack',
             empresa: 'Proyecto personal',
@@ -52,7 +59,14 @@ export const DatosJson = ({ children }) => {
         }
     ]
 
-    const enJson = [       
+    const enJson = [
+         {
+            puesto: 'FrontEnd Developer',
+            empresa: 'La Caixa',
+            fechas: 'December 2022 - June 2023',
+            datos: ['Development of SPA and webapps',                        
+            'ReactJS, Javascript, CSS, Jest, Github']
+        },
         {
             puesto: 'Fullstack Developer',
             empresa: 'Personal project',
